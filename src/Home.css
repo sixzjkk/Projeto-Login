@@ -1,0 +1,50 @@
+body {
+    background-color: #0f111a;
+    background-image: linear-gradient(135deg, #0f111a 60%, #1e293b);
+    color: #e4e4e4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .home-container {
+    background: rgba(36, 37, 42, 0.85);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.4);
+    text-align: center;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .home-container h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #0fffc1, #007cf0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 3s ease-in-out infinite;
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      text-shadow: 0 0 10px #0fffc1, 0 0 20px #007cf0;
+    }
+    50% {
+      text-shadow: 0 0 20px #0fffc1, 0 0 30px #007cf0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
